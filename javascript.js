@@ -111,15 +111,4 @@ document.getElementById("clear").addEventListener("click", () => {
 renderMenu();
 renderCart();
 
-// Send order to backend before WhatsApp
-fetch("http://localhost:4000/order", {
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({
-    name,
-    address,
-    notes,
-    items: cart,
-    total: document.getElementById("total").innerText,
-  }),
-});
+m
